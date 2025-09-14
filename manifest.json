@@ -1,0 +1,27 @@
+{
+    "name": "AIEx",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["scripting", "activeTab", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+       {
+           "matches": ["<all_urls>"],
+           "js": ["content.js"]
+       }
+   ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/16x16icon.png",
+        "32": "images/32x32icon.png",
+        "48": "images/48x48icon.png",
+        "128": "images/128x128icon.png"
+  }
+}

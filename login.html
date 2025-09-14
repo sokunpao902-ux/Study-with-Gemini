@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <form>
+    <div class="container">
+      <h1>Log In</h1>
+      
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-confirm" class="last-enter" required>
+      <div class="rem-link">
+          <label>
+              <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+          <a href="">Forgot password?</a>
+      </div>
+
+
+      <div class="clearfix">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <button type="submit" class="login-btn">Log In</button>
+      </div>
+      <div>Don't have an account? &nbsp;<a href="signup.html" class="signup-btn"> Sign up</a></div>
+    </div>
+  </form>
+  <script src="login.js"></script>
+</body>
+</html>
